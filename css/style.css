@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Encabezado*/
+/*Promo*/
+nav .promo {
+  background-color: #ff8080;
+  height: 30px;
+  color: #000000;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+}
+/* Menu usuario */
+nav .menu-usuario {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+/*Redes*/
+.redes {
+  text-align: right;
+  margin-top: 1rem;
+}
+.redes ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.redes i {
+  color: #ff8080;
+}
+/*Logo*/
+.logo {
+  text-align: center;
+  margin-top: -1.5rem;
+}
+.logo img {
+  width: 175px;
+  height: 150px;
+}
+/*Cliente*/
+nav .cliente {
+  text-align: end;
+  margin: 1rem 2rem;
+}
+.cliente i {
+  color: #ff8080;
+}
+/*Barra de Navegacion*/
+nav .barra-nav {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+/*Busqueda*/
+nav .busqueda {
+  text-align: start;
+  margin-left: 2rem;
+}
+.busqueda i {
+  color: #ff8080;
+  font-size: 1.4rem;
+}
+/*Menu de Navegacion*/
+.menu-nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  list-style: none;
+}
+.menu-nav a {
+  color: #000000;
+  font-size: 1rem;
+  text-decoration: none;
+}
+nav .carrito {
+  text-align: end;
+  margin-right: 2rem;
+}
+.carrito i {
+  color: #ff8080;
+  font-size: 1.4rem;
+}
+/* Main section(inicio) */
+.main-section {
+  display: flex;
+}
+.main-section a {
+  text-decoration: none;
+}
+.section-mu {
+  background-image: url(../assets/mujeres.jpg);
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+}
+.section-mu h3 {
+  background-color: #ff8080;
+  border: 2px solid #000000;
+  border-radius: 0.5rem;
+  margin-top: 24rem;
+  color: #000000;
+}
+/* SECCION HOMBRE */
+.section-ho {
+  background-image: url(../assets/hombres.jpg);
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+}
+.section-ho h3 {
+  background-color: #ff8080;
+  border: 2px solid #000000;
+  border-radius: 0.5rem;
+  margin-top: 24rem;
+  color: #000000;
+}
+/* SECCION NIÑOS */
+.section-ni {
+  background-image: url(../assets/niños.jpg);
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+}
+.section-ni h3 {
+  background-color: #ff8080;
+  border: 2px solid #000000;
+  border-radius: 0.5rem;
+  margin-top: 24rem;
+  color: #000000;
+}
+/*MAIN Section2*/
+main .main-section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 4rem;
+  justify-items: center;
+  align-items: center;
+}
+.info1,
+.info2,
+.info3 {
+  background-color: #ff8080;
+  width: 420px;
+  height: 300px;
+  padding-top: 2rem;
+}
+.info1,
+.info2,
+.info3,
+i {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000000;
+}
+.info1,
+.info2,
+.info3,
+p {
+  font-size: 1rem;
+}
+/* TITULOS H2,H3 */
+h2 {
+  background-color: #ff8080;
+  font-size: 3.5rem;
+  text-align: center;
+  color: white;
+  font-family: "Great Vibes", cursive;
+}
+h3 {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  font-size: 2rem;
+  color: #000000;
+  font-family: "Great Vibes", cursive;
+}
+
+/* Aside*/
+aside {
+  display: block;
+  margin-top: 3rem;
+}
+aside i {
+  font-size: 1.7rem;
+  color: #ff8080;
+  margin: 2rem;
+}
+aside .img-marcas img {
+  width: 100px;
+  height: 60px;
+  margin: 3.5rem;
+  filter: grayscale(100%);
+}
+
+/* Footer Copyright*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff8080;
+  font-size: 1.2rem;
+  font-family: "Mulish", sans-serif;
+  color: #000000;
+}
+.footer i {
+  color: #000000;
+  font-size: 1.2rem;
+  margin: 2rem;
+}
+/* fin de estilos generales */
+
+/* MAIN HOMBRES MUJERES NIÑOS OFERTAS */
+main .mu-interior {
+  display: grid;
+  background-color: aqua;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-row-gap: 7rem;
+}
+.mu-interior img {
+  width: 328px;
+  height: 384px;
+}
+/*Section Medias*/
+main .mu-medias {
+  display: grid;
+  background-color: aqua;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-row-gap: 7rem;
+}
+
+/* Contacto */
+.footer-ref {
+  display: flex;
+  font-family: "Mulish", sans-serif;
+  color: #000000;
+  text-align: center;
+  font-size: 1.2rem;
+  justify-content: space-between;
+}
+.footer-ref i {
+  display: flex;
+  color: #ff8080;
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 565px) {
+  nav .menu-usuario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
