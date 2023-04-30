@@ -95,35 +95,57 @@
         </div>
       </nav>
     </header>
-
     <!--Main-->
     <main>
-      <!-- Referencias de Lugar-->
-      <div class="footer-ref">
-        <div>
-          <h3>Contacto</h3>
-          <i class="fa-solid fa-envelope"></i>Mail
-          <i class="fa-solid fa-phone"></i>Telefono
-          <i class="fa-solid fa-clock"></i>horarios
-        </div>
-
-        <div>
-          <h3>Como llego?</h3>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13222.478003815855!2d-60.0826189!3d-34.0536303!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b99de7499e8ad7%3A0xa91edd0a0075c6b2!2sPergola%20Lencer%C3%ADa!5e0!3m2!1ses-419!2sar!4v1680532165675!5m2!1ses-419!2sar"
-            width="250"
-            height="250"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-
-        <div>
-          <h3>Siguenos en:</h3>
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-instagram"></i>
+      <div class="container">
+        <h1 class="perg-titulo"><span>Pergola Lenceria</span></h1>
+        <div class="wrapper">
+          <!-- Pergola INFORMATION -->
+          <div class="perg-info">
+            <ul>
+              <li>
+                <i class="fa-sharp fa-solid fa-location-dot"></i> Arostegui 126,
+                Arrecifes (Bs As)
+              </li>
+              <li><i class="fa fa-phone"></i> 2478-50-6775</li>
+              <li>
+                <i class="fa fa-envelope"></i> Pergolalenceria@hotmail.com
+              </li>
+              <li>
+                <i class="fa-solid fa-clock"></i> Horarios: 9hs a 12hs / 16hs a
+                20hs
+              </li>
+            </ul>
+          </div>
+          <!-- CONTACTO FORM -->
+          <div class="contacto">
+            <h3>Contacto</h3>
+            <form>
+              <p>
+                <label>Nombre</label>
+                <input type="text" name="name" id="name" required />
+              </p>
+              <p>
+                <label>Apellido</label>
+                <input type="text" name="company" id="company" />
+              </p>
+              <p>
+                <label>Mail</label>
+                <input type="email" name="email" id="email" required />
+              </p>
+              <p>
+                <label>Telefono</label>
+                <input type="text" name="phone" id="phone" />
+              </p>
+              <p class="ancho">
+                <label>Mensaje</label>
+                <textarea name="message" rows="5" id="message"></textarea>
+              </p>
+              <p class="ancho">
+                <button type="submit">Enviar</button>
+              </p>
+            </form>
+          </div>
         </div>
       </div>
       <!--Nuestras Marcas-->
