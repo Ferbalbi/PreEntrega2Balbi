@@ -72,6 +72,7 @@ nav .busqueda {
   color: #000000;
   font-size: 1rem;
   text-decoration: none;
+  font-family: "Mulish", sans-serif;
 }
 nav .carrito {
   text-align: end;
@@ -137,6 +138,9 @@ main .main-section2 {
   justify-items: center;
   align-items: center;
 }
+.main-section2 h3 {
+  color: #000000;
+}
 .info1,
 .info2,
 .info3 {
@@ -178,10 +182,10 @@ section img {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 2em;
+  margin: 3rem auto;
 }
 
-ul {
+.container ul {
   list-style: none;
   padding: 0;
 }
@@ -198,7 +202,7 @@ ul {
 }
 
 .wrapper {
-  box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
+  box-shadow: 0 0 20px 0 #ff8080;
 }
 
 .wrapper > * {
@@ -259,28 +263,67 @@ ul {
   outline: 0;
   transition: background-color 2s ease-out;
 }
+/*UBICACION*/
+main .ubicacion {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem;
+}
+.mapa,
+.video-local {
+  box-shadow: 0 0 20px 0 #ff8080;
+}
+
+/*Main Pagina (Sobre nosotros)*/
+main .sobre-nosotros {
+  width: 1200px;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem auto;
+  border-radius: 20px;
+  box-shadow: 5px 8px 12px #ff8080;
+  background-image: linear-gradient(rgba(0 0 0 / 0.5), rgba(0 0 0 / 0.5)),
+    url(../assets/sobre-nosotros.jpg);
+  background-size: cover;
+}
+.info-empresa h3 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+main .info-empresa p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.info-empresa a {
+  text-decoration: none;
+  color: #ff8080;
+  font-family: "Mulish", sans-serif;
+}
 
 /* TITULOS H2,H3 */
 h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
   color: #000000;
   font-family: "Great Vibes", cursive;
+  margin: 2rem;
+}
+h2 i {
+  color: #ff8080;
 }
 h3 {
-  background-color: white;
-  padding: 20px;
-  margin: 20px;
+  margin: 2rem;
   text-align: center;
   font-size: 2rem;
-  color: #000000;
-  font-family: "Great Vibes", cursive;
+  color: #ff8080;
+  font-family: "Mulish", sans-serif;
 }
+
 /* Aside*/
-aside {
-  display: block;
-  margin-top: 3rem;
-}
 aside i {
   font-size: 1.7rem;
   color: #ff8080;
