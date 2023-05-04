@@ -69,6 +69,7 @@
           </div>
         </div>
         <!-- Barra de navegacion-->
+        <div class="menu-hambur"><i class="fa-solid fa-bars"></i></div>
         <div class="barra-nav">
           <!--Busqueda-->
           <div class="busqueda">
@@ -98,29 +99,23 @@
     <!--Main-->
     <main>
       <div class="container">
-        <h1 class="perg-titulo"><span>Pergola Lenceria</span></h1>
+        <h1 class="brand"><span>Pergola Lenceria</span></h1>
+
         <div class="wrapper">
-          <!-- Pergola INFORMATION -->
-          <div class="perg-info">
+          <!-- COMPANY INFORMATION -->
+          <div class="company-info">
             <ul>
+              <li><i class="fa fa-road"></i> Arostegui 126, Arrecifes Bs As</li>
+              <li><i class="fa fa-phone"></i> (2478) 409194</li>
               <li>
-                <i class="fa-sharp fa-solid fa-location-dot"></i> Arostegui 126,
-                Arrecifes (Bs As)
-              </li>
-              <li><i class="fa fa-phone"></i> 2478-50-6775</li>
-              <li>
-                <i class="fa fa-envelope"></i> Pergolalenceria@hotmail.com
-              </li>
-              <li>
-                <i class="fa-solid fa-clock"></i> Horarios: 9hs a 12hs / 16hs a
-                20hs
+                <i class="fa fa-envelope"></i> PergolaLenceria@hotmail.com
               </li>
             </ul>
           </div>
-          <!-- CONTACTO FORM -->
-          <div class="contacto">
-            <h2>Contacto</h2>
-            <form>
+          <!-- CONTACT FORM -->
+          <div class="contact">
+            <h3>Contacto</h3>
+            <form id="contact-form">
               <p>
                 <label>Nombre</label>
                 <input type="text" name="name" id="name" required />
@@ -133,15 +128,18 @@
                 <label>Mail</label>
                 <input type="email" name="email" id="email" required />
               </p>
+
               <p>
                 <label>Telefono</label>
                 <input type="text" name="phone" id="phone" />
               </p>
-              <p class="ancho">
+
+              <p class="full">
                 <label>Mensaje</label>
                 <textarea name="message" rows="5" id="message"></textarea>
               </p>
-              <p class="ancho">
+
+              <p class="full">
                 <button type="submit">Enviar</button>
               </p>
             </form>
@@ -169,16 +167,14 @@
           </div>
         </div>
       </aside>
-
       <!--FOOTER Copyright-->
       <footer>
         <div class="footer">
-          <div><i class="fa-solid fa-copyright"></i>Pergola Lenceria-2023</div>
-          <div>
+          <i class="fa-solid fa-copyright"> Pergola Lenceria-2023</i>
+          <div class="medios-pago">
             <i class="fa-brands fa-cc-mastercard"></i>
             <i class="fa-solid fa-qrcode"></i>
-            <i class="fa-brands fa-cc-visa"></i
-            ><i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-cc-visa"></i>
           </div>
         </div>
       </footer>
