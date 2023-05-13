@@ -23,7 +23,7 @@ h3 {
 }
 /* Encabezado*/
 /*Promo*/
-nav .promo {
+.promo {
   background-color: #ff8080;
   height: 30px;
   color: #000000;
@@ -31,7 +31,7 @@ nav .promo {
   font-family: "Mulish", sans-serif;
 }
 /* Menu usuario */
-nav .menu-usuario {
+.menu-usuario {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -82,45 +82,49 @@ nav .menu-usuario {
   border-radius: 50%;
 }
 /*Barra de Navegacion*/
-nav .barra-nav {
+.container-nav {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
 }
 /*Busqueda*/
-nav .busqueda {
-  text-align: start;
-  margin: 0 2rem;
+.busqueda {
+  order: 1;
+  text-align: left;
+  margin-left: 2rem;
 }
 .busqueda i {
   color: #ff8080;
   font-size: 1.5rem;
 }
-/*Menu de Navegacion*/
-.menu-hambur {
-  display: none;
+/*Menu Navegacion*/
+.link-nav {
+  order: 2;
 }
-.menu-hambur i {
+.navbar-toggler-mio {
+  background-color: #ffffff;
   color: #ff8080;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  border: 1px solid #ff8080;
 }
-.menu-nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  list-style: none;
+.navbar-mio {
+  background-color: #ffffff;
 }
-.menu-nav a {
-  color: #000000;
+.navbar-collapse-mio {
+  justify-content: center;
+}
+.navbar-ul a {
   font-size: 1rem;
-  text-decoration: none;
+  margin: 0 1.3rem;
   font-family: "Mulish", sans-serif;
 }
-.menu-nav a:hover {
+.navbar-ul a:hover {
   color: #ff8080;
 }
 /*Carrito*/
-nav .carrito {
-  text-align: end;
+.carrito {
+  text-align: right;
+  order: 3;
   margin-right: 2rem;
 }
 .carrito i {
@@ -338,7 +342,7 @@ main .sobre-nosotros {
   background-size: cover;
 }
 main .info-empresa h3 {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #ff8080;
 }
 main .info-empresa p {
@@ -441,7 +445,7 @@ a {
 /*Media Queries*/
 @media (max-width: 576px) {
   /*Menu usuario*/
-  nav .menu-usuario {
+  .menu-usuario {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -451,22 +455,19 @@ a {
     display: none;
   }
   /*Barra de Navegacion*/
-  .menu-hambur {
-    display: block;
-    margin-bottom: -2rem;
-    margin-left: 1rem;
-  }
-  nav .barra-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
+
+  /*Busqueda*/
   .busqueda {
-    margin: 0 1.5rem;
+    text-align: right;
+    order: 2;
   }
   /*Menu de Navegacion*/
-  .menu-nav {
-    display: none;
+  .link-nav {
+    order: 1;
+  }
+  /*Carrito*/
+  .carrito {
+    order: 3;
   }
   /*Main Section Pagina (Index)*/
   main .main-section {
@@ -540,14 +541,14 @@ a {
     align-items: center;
     background-position: center center;
     width: 100%;
-    height: 500px;
+    height: 450px;
   }
   main .info-empresa h3 {
     font-size: 1.5rem;
     color: #ff8080;
   }
   main .info-empresa p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   /*Video local + ubicacion*/
   main .video-local iframe {
