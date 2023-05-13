@@ -248,13 +248,12 @@ ul {
   list-style: none;
   padding: 0;
 }
-.brand {
+.titulo {
   text-align: left;
   font-weight: 300;
-  text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-.brand span {
+.titulo span {
   color: #ff8080;
 }
 .wrapper {
@@ -266,49 +265,49 @@ ul {
   padding: 1em;
 }
 /* Pergola INFORMATION */
-.company-info {
+.pergola-info {
   background: #ff8080;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-.company-info h3,
-.company-info ul {
+.pergola-info h3,
+.pergola-info ul {
   text-align: center;
   margin: 0 0 1rem 0;
 }
 /* CONTACTO */
-.contact {
+.contacto {
   background: #ffffff;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 /* Contacto FORM */
-.contact form {
+.contacto form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
-.contact form label {
+.contacto form label {
   display: block;
 }
-.contact form p {
+.contacto form p {
   margin: 0;
 }
-.contact form .full {
+.contacto form .full {
   grid-column: 1 / 3;
 }
-.contact form button,
-.contact form input,
-.contact form textarea {
+.contacto form button,
+.contacto form input,
+.contacto form textarea {
   width: 100%;
   padding: 1em;
   border: solid 1px #ff8080;
   border-radius: 4px;
 }
-.contact form textarea {
+.contacto form textarea {
   resize: none;
 }
-.contact form button {
+.contacto form button {
   background: #ff8080;
   border: 0;
   color: #e4e4e4;
@@ -316,8 +315,8 @@ ul {
   font-size: 14px;
   font-weight: bold;
 }
-.contact form button:hover,
-.contact form button:focus {
+.contacto form button:hover,
+.contacto form button:focus {
   background: #ff8080;
   color: #ffffff;
   outline: 0;
@@ -327,7 +326,7 @@ ul {
 /*Main Pagina (Sobre nosotros)*/
 main .sobre-nosotros {
   width: 1200px;
-  height: 800px;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -345,7 +344,7 @@ main .info-empresa h3 {
 main .info-empresa p {
   color: white;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-family: "Mulish", sans-serif;
 }
 .info-empresa a {
@@ -359,14 +358,17 @@ main .info-empresa p {
 }
 .mapa {
   display: flex;
+  background-color: #ff8080;
+  box-shadow: 0 0 20px 0 #ff8080;
   justify-content: center;
   align-items: center;
 }
 .mapa p {
-  color: #ff8080;
-  font-family: "Mulish", sans-serif;
-  font-size: 1.5rem;
-  margin: 5rem;
+  color: #000000;
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  margin: 2rem;
+  padding: 1rem;
 }
 
 /*Nuestras Marcas*/
@@ -502,27 +504,33 @@ a {
     align-items: center;
   }
   /*Main Pagina (Contacto)*/
+  main .container {
+    max-width: 100%;
+  }
+  main .titulo {
+    text-align: center;
+  }
   .wrapper {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
   }
 
   .wrapper > * {
     padding: 2em;
   }
 
-  .company-info {
+  .pergola-info {
     border-radius: 4px 0 0 4px;
   }
 
-  .contact {
+  .contacto {
     border-radius: 0 4px 4px 0;
   }
 
-  .company-info h3,
-  .company-info ul,
+  .pergola-info h3,
+  .pergola-info ul,
   .brand {
-    text-align: left;
+    text-align: center;
   }
   /*Main Pagina(Sobre Nosotros*/
   main .sobre-nosotros {
@@ -530,7 +538,8 @@ a {
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    width: 550px;
+    background-position: center center;
+    width: 100%;
     height: 500px;
   }
   main .info-empresa h3 {
@@ -544,12 +553,17 @@ a {
   main .video-local iframe {
     height: 300px;
   }
+  main .mapa {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
   main .mapa iframe {
-    width: 300px;
+    width: 100%;
     height: 300px;
   }
   main .mapa p {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   /*Nuestras Marcas*/
   main .img-marcas img {
