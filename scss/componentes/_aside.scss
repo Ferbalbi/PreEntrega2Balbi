@@ -1,0 +1,51 @@
+/*Aside*/
+.red-social {
+  display: flex;
+  justify-content: center;
+  margin: $marginDos;
+  @media (max-width: 576px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .face {
+    @extend %redesSociales;
+    background-image: linear-gradient($colorCinco, $colorCinco),
+      url(../assets/img-fb-ig/img-fb-2.jpg);
+    a {
+      text-decoration: none;
+      h2 {
+        color: $colorTres;
+        &:hover {
+          color: $colorUno;
+        }
+      }
+    }
+    @media (max-width: 576px) {
+      img {
+        width: 100%;
+        height: 100px;
+      }
+    }
+  }
+  .ig {
+    @extend %redesSociales;
+    background-image: linear-gradient($colorCinco, $colorCinco),
+      url(../assets/img-fb-ig/img-ig2.jpg);
+    a {
+      text-decoration: none;
+      h2 {
+        color: $colorTres;
+        &:hover {
+          color: $colorUno;
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    img {
+      width: 100%;
+      height: 100px;
+    }
+  }
+}

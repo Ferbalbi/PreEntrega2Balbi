@@ -1,0 +1,304 @@
+/*Main Section Pagina(Index)*/
+.main-section {
+  display: flex;
+  margin: $marginDos auto;
+  a {
+    text-decoration: none;
+    h2 {
+      color: $colorTres;
+      font-size: 4rem;
+      &:hover {
+        color: $colorUno;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  @media (max-width: 576px) {
+    .section-mu,
+    .section-ho,
+    .section-ni {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+    }
+  }
+}
+/*Section Mujeres*/
+.section-mu {
+  @extend %seccionesIndex;
+  background-image: linear-gradient($colorCinco, $colorCinco),
+    url(../assets/mujeres.jpg);
+}
+/*Section Hombres*/
+.section-ho {
+  @extend %seccionesIndex;
+  background-image: linear-gradient($colorCinco, $colorCinco),
+    url(../assets/hombres.jpg);
+}
+.section-ni {
+  @extend %seccionesIndex;
+  background-image: linear-gradient($colorCinco, $colorCinco),
+    url(../assets/niños.jpg);
+  background-size: cover;
+}
+/*Main Section 2*/
+.main-section2 {
+  @include alineacionGrid();
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 4rem;
+  .info1,
+  .info2,
+  .info3 {
+    background-color: $colorUno;
+    text-align: $textaUno;
+    width: 420px;
+    height: 300px;
+    padding-top: 2rem;
+    i {
+      font-size: $fsTres;
+      color: $colorDos;
+    }
+    h3 {
+      color: $colorDos;
+    }
+    p {
+      font-size: 1rem;
+      text-align: $textaUno;
+    }
+  }
+  @media (max-width: 576px) {
+    @include alineacionFlex();
+    flex-direction: column;
+    gap: 2rem;
+  }
+  @media (max-width: 576px) {
+    .info1,
+    .info2,
+    .info3 {
+      width: 350px;
+      height: 300px;
+    }
+  }
+}
+/*Main Pagina (Mujeres, Hombres y niños)*/
+section {
+  @include alineacionGrid();
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  gap: 3rem;
+  img {
+    width: 350px;
+    height: 350px;
+  }
+  p {
+    text-align: $textaUno;
+    font-weight: bold;
+    font-family: $ffDos;
+    i {
+      color: $colorUno;
+    }
+  }
+  @media (max-width: 576px) {
+    @include alineacionFlex();
+    flex-direction: column;
+  }
+}
+/*Main Pagina (Contacto)*/
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  @media (max-width: 576px) {
+    max-width: 100%;
+  }
+}
+.titulo {
+  text-align: $textaDos;
+  font-weight: 300;
+  margin: 0.2rem;
+  letter-spacing: 0.1em;
+  span {
+    color: $colorUno;
+  }
+  @media (max-width: 576px) {
+    text-align: $textaUno;
+  }
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  box-shadow: 0 0 20px 0 $colorUno;
+  > * {
+    padding: 1em;
+  }
+  @media (max-width: 576px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    > * {
+      padding: 2em;
+    }
+  }
+}
+.pergola-info {
+  background: $colorUno;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  ul {
+    text-align: $textaUno;
+    list-style: none;
+    margin: $marginTres $marginTres 1rem $marginTres;
+    padding: 0;
+  }
+  @media (max-width: 576px) {
+    border-radius: $brTres;
+    ul {
+      text-align: $textaUno;
+    }
+  }
+}
+.contacto {
+  background: $colorTres;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    p {
+      margin: $marginTres;
+    }
+    label {
+      display: block;
+    }
+    textarea {
+      resize: none;
+    }
+    button {
+      background: $colorUno;
+      border: 0;
+      color: $ColorCuatro;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: bold;
+      &:hover,
+      :focus {
+        background: $colorUno;
+        color: $colorTres;
+        outline: 0;
+        transition: background-color 2s ease-out;
+      }
+    }
+    button,
+    input,
+    textarea {
+      width: 100%;
+      padding: 1em;
+      border: solid 1px $colorUno;
+      border-radius: 4px;
+    }
+    .full {
+      grid-column: 1 / 3;
+    }
+  }
+  @media (max-width: 576px) {
+    border-radius: $brDos;
+  }
+}
+/*Main Pagina (Sobre nosotros)*/
+.sobre-nosotros {
+  width: 1200px;
+  height: 600px;
+  @include alineacionFlex();
+  margin: $marginUno auto;
+  border-radius: 20px;
+  box-shadow: 5px 8px 12px $colorUno;
+  background-image: linear-gradient($colorCinco, $colorCinco),
+    url(../assets/sobre-nosotros.jpg);
+  background-size: cover;
+  @media (max-width: 576px) {
+    @include alineacionGrid();
+    grid-template-columns: 1fr;
+    background-position: center center;
+    width: 100%;
+    height: 450px;
+  }
+}
+.info-empresa {
+  h3 {
+    font-size: $fsDos;
+    color: $colorUno;
+  }
+  p {
+    color: $colorTres;
+    text-align: $textaUno;
+    font-size: $fsTres;
+    font-family: $ffDos;
+    a {
+      text-decoration: none;
+      color: $colorUno;
+      font-family: $ffDos;
+    }
+  }
+  @media (max-width: 576px) {
+    h3 {
+      font-size: $fsTres;
+      color: $colorUno;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
+/*Video local + Ubicacion*/
+.video-local {
+  box-shadow: 0 0 20px 0 $colorUno;
+  @media (max-width: 576px) {
+    height: 100%;
+  }
+}
+.mapa {
+  @include alineacionFlex();
+  background-color: $colorUno;
+  box-shadow: 0 0 20px 0 $colorUno;
+  p {
+    color: $colorDos;
+    font-family: $ffUno;
+    font-size: $fsDos;
+    margin: $marginDos;
+    padding: 1rem;
+  }
+  @media (max-width: 576px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    iframe {
+      width: 100%;
+      height: 300px;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
+/*Nuestras Marcas*/
+.img-marcas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  img {
+    width: 100px;
+    height: 100px;
+    filter: grayscale(100%);
+    @media (max-width: 576px) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+/*Mixin*/
+@mixin alineacionFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin alineacionGrid {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
