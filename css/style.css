@@ -16,7 +16,6 @@ h2 i {
     font-size: 2rem;
   }
 }
-
 h3 {
   font-size: 2rem;
   text-align: center;
@@ -40,7 +39,6 @@ h3 {
   color: #000000;
   font-family: "Mulish", sans-serif;
 }
-
 /*Menu Usuario*/
 .menu-usuario {
   display: grid;
@@ -58,7 +56,6 @@ h3 {
     display: none;
   }
 }
-
 /*Redes*/
 .redes {
   display: flex;
@@ -81,7 +78,6 @@ h3 {
   padding: 8px 8px;
   border-radius: 50%;
 }
-
 /*Logo*/
 .logo {
   text-align: center;
@@ -91,7 +87,6 @@ h3 {
   width: 175px;
   height: 150px;
 }
-
 /*Cliente*/
 .cliente {
   text-align: end;
@@ -106,14 +101,12 @@ h3 {
   padding: 10px 10px;
   border-radius: 50%;
 }
-
 /*Barra de Navegacion*/
 .container-nav {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   align-items: center;
 }
-
 /*Busqueda*/
 .busqueda {
   order: 1;
@@ -130,7 +123,6 @@ h3 {
     order: 2;
   }
 }
-
 /*Menu Navegacion*/
 .link-nav {
   order: 2;
@@ -140,22 +132,25 @@ h3 {
     order: 1;
   }
 }
-
 .navbar-mio {
   background-color: #ffffff;
 }
-
+@media (max-width: 576px) {
+  .navbar-mio {
+    position: absolute;
+    margin-top: -2rem;
+    width: 200px;
+  }
+}
 .navbar-toggler-mio {
   background-color: #ffffff;
   color: #ff8080;
   font-size: 1.5rem;
-  border: 1px solid #ff8080;
+  border: none;
 }
-
 .navbar-collapse-mio {
   justify-content: center;
 }
-
 .navbar-ul a {
   font-size: 1rem;
   margin: 0 1.3rem;
@@ -164,7 +159,6 @@ h3 {
 .navbar-ul a:hover {
   color: #ff8080;
 }
-
 /*Carrito*/
 .carrito {
   text-align: right;
@@ -180,21 +174,10 @@ h3 {
     order: 3;
   }
 }
-
 /*Main Section Pagina(Index)*/
 .main-section {
   display: flex;
   margin: 2rem auto;
-}
-.main-section a {
-  text-decoration: none;
-}
-.main-section a h2 {
-  color: #ffffff;
-  font-size: 4rem;
-}
-.main-section a h2:hover {
-  color: #ff8080;
 }
 .section-ni,
 .section-ho,
@@ -205,6 +188,16 @@ h3 {
   background-size: cover;
   width: 500px;
   height: 500px;
+}
+.main-section a {
+  text-decoration: none;
+}
+.main-section a h2 {
+  color: #ffffff;
+  font-size: 4rem;
+}
+.main-section a h2:hover {
+  color: #ff8080;
 }
 @media (max-width: 576px) {
   .main-section {
@@ -223,25 +216,21 @@ h3 {
     width: 100%;
   }
 }
-
 /*Section Mujeres*/
 .section-mu {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../assets/mujeres.jpg);
 }
-
 /*Section Hombres*/
 .section-ho {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../assets/hombres.jpg);
 }
-
+/*Section Niños*/
 .section-ni {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../assets/niños.jpg);
-  background-size: cover;
 }
-
 /*Main Section 2*/
 .main-section2 {
   display: grid;
@@ -293,7 +282,6 @@ h3 {
     height: 300px;
   }
 }
-
 /*Main Pagina (Mujeres, Hombres y niños)*/
 section {
   display: grid;
@@ -323,113 +311,6 @@ section p i {
     flex-direction: column;
   }
 }
-/*Main Pagina (Sobre nosotros)*/
-.sobre-nosotros {
-  width: 1200px;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 3rem auto;
-  border-radius: 20px;
-  box-shadow: 5px 8px 12px #ff8080;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../assets/sobre-nosotros.jpg);
-  background-size: cover;
-}
-@media (max-width: 576px) {
-  .sobre-nosotros {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: 1fr;
-    background-position: center center;
-    width: 100%;
-    height: 450px;
-  }
-}
-
-.info-empresa h3 {
-  font-size: 2rem;
-  color: #ff8080;
-}
-.info-empresa p {
-  color: #ffffff;
-  text-align: center;
-  font-size: 1.5rem;
-  font-family: "Mulish", sans-serif;
-}
-.info-empresa p a {
-  text-decoration: none;
-  color: #ff8080;
-  font-family: "Mulish", sans-serif;
-}
-@media (max-width: 576px) {
-  .info-empresa h3 {
-    font-size: 1.5rem;
-    color: #ff8080;
-  }
-  .info-empresa p {
-    font-size: 0.8rem;
-  }
-}
-
-/*Video local + Ubicacion*/
-.video-local {
-  box-shadow: 0 0 20px 0 #ff8080;
-}
-@media (max-width: 576px) {
-  .video-local {
-    height: 100%;
-  }
-}
-
-.mapa {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ff8080;
-  box-shadow: 0 0 20px 0 #ff8080;
-}
-.mapa p {
-  color: #000000;
-  font-family: "Great Vibes", cursive;
-  font-size: 2rem;
-  margin: 2rem;
-  padding: 1rem;
-}
-@media (max-width: 576px) {
-  .mapa {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-  .mapa iframe {
-    width: 100%;
-    height: 300px;
-  }
-  .mapa p {
-    font-size: 1.3rem;
-  }
-}
-
-/*Nuestras Marcas*/
-.img-marcas {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.img-marcas img {
-  width: 100px;
-  height: 100px;
-  filter: grayscale(100%);
-}
-@media (max-width: 576px) {
-  .img-marcas img {
-    width: 50px;
-    height: 50px;
-  }
-}
 /*Main Pagina (Contacto)*/
 .container {
   max-width: 1170px;
@@ -442,7 +323,6 @@ section p i {
     max-width: 100%;
   }
 }
-
 .titulo {
   text-align: left;
   font-weight: 300;
@@ -457,7 +337,6 @@ section p i {
     text-align: center;
   }
 }
-
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -475,7 +354,6 @@ section p i {
     padding: 2em;
   }
 }
-
 .pergola-info {
   background: #ff8080;
   border-top-left-radius: 4px;
@@ -495,7 +373,6 @@ section p i {
     text-align: center;
   }
 }
-
 .contacto {
   background: #ffffff;
   border-bottom-left-radius: 4px;
@@ -546,11 +423,123 @@ section p i {
     border-radius: 0 4px 4px 0;
   }
 }
+/*Main Pagina (Sobre nosotros)*/
+.sobre-nosotros {
+  width: 1200px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  border-radius: 20px;
+  box-shadow: 5px 8px 12px #ff8080;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/sobre-nosotros.jpg);
+  background-size: cover;
+}
+@media (max-width: 576px) {
+  .sobre-nosotros {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    background-position: center center;
+    width: 100%;
+    height: 450px;
+  }
+}
+.info-empresa h3 {
+  font-size: 2rem;
+  color: #ff8080;
+}
+.info-empresa p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Mulish", sans-serif;
+  padding: 0 10px;
+}
+.info-empresa p a {
+  text-decoration: none;
+  color: #ff8080;
+  font-family: "Mulish", sans-serif;
+}
+@media (max-width: 576px) {
+  .info-empresa h3 {
+    font-size: 1.3rem;
+    color: #ff8080;
+  }
+  .info-empresa p {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+}
+/*Video local + Ubicacion*/
+.video-local {
+  box-shadow: 0 0 20px 0 #ff8080;
+}
+@media (max-width: 576px) {
+  .video-local {
+    height: 100%;
+  }
+}
+.mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff8080;
+  box-shadow: 0 0 20px 0 #ff8080;
+}
+.mapa p {
+  color: #000000;
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  margin: 2rem;
+  padding: 1rem;
+}
+@media (max-width: 576px) {
+  .mapa {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .mapa iframe {
+    width: 100%;
+    height: 300px;
+  }
+  .mapa p {
+    font-size: 1.3rem;
+  }
+}
+/*Nuestras Marcas*/
+.img-marcas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img-marcas img {
+  width: 100px;
+  height: 100px;
+  filter: grayscale(100%);
+}
+@media (max-width: 576px) {
+  .img-marcas img {
+    width: 50px;
+    height: 50px;
+  }
+}
 /*Aside*/
 .red-social {
   display: flex;
   justify-content: center;
   margin: 2rem;
+}
+@media (max-width: 576px) {
+  .red-social {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 .red-social .ig,
 .red-social .face {
@@ -560,13 +549,6 @@ section p i {
   background-size: cover;
   width: 100%;
   height: 250px;
-}
-@media (max-width: 576px) {
-  .red-social {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
 }
 .red-social .face {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -606,7 +588,6 @@ section p i {
     height: 100px;
   }
 }
-
 /*Footer*/
 .footer {
   display: flex;

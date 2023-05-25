@@ -119,12 +119,17 @@ h3 {
 }
 .navbar-mio {
   background-color: $colorTres;
+  @media (max-width: 576px) {
+    position: absolute;
+    margin-top: -2rem;
+    width: 200px;
+  }
 }
 .navbar-toggler-mio {
   background-color: $colorTres;
   color: $colorUno;
   font-size: $fsTres;
-  border: 1px solid $colorUno;
+  border: none;
 }
 .navbar-collapse-mio {
   justify-content: center;
